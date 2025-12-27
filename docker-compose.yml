@@ -1,0 +1,9 @@
+services:
+  mq-adapter:
+    image: ghcr.io/jelcoo/ov-mq-adapter:main
+    restart: unless-stopped
+    environment:
+      - NDOV_ENDPOINT=
+      - RABBITMQ_ENDPOINT=
+      - RABBITMQ_USER=
+      - RABBITMQ_PASSWORD=
